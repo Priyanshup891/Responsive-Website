@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+body{
+    background-color: #000;
+}
+.header{
+    padding: 10px 0px;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 2;
+    top: 0;
+    left: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li {
+    margin: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(163, 163, 163);
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: #fff
+}
+.close-menu img{
+    position: absolute;
+    top: 30px;
+    width: 30px;
+    right: 0%;
+    margin-right: 60px;
+}
+
+.header .container .logo{
+    color:#949494;
+    font-size: 1rem;
+    letter-spacing: 5px;
+}
+.header .container .menu img{
+    width: 30px;
+    margin-top: 10px
+}
+.sub-header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/bg.jpg') no-repeat center center / cover;
+    height: 80vh;
+}
+.sub-header .container{
+    flex-direction: column;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-header .container h1{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #C5C5C5;
+}
+.sub-header .container p{
+    color: #C5C5C5;
+    font-size: 20px;
+    width: 50%;
+    padding: 10px;
+}
+.btn{
+    padding: 10px 30px;
+    background: #bbbbbb;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.btn:hover{
+    background: #fff;
+}
+
+.quote .container{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quote .container .margin{
+    height: 3px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #949494;
+    opacity: 0.7;
+}
+.quote .container p{
+    color: #949494;
+    font-size: 1rem;
+   padding: 20px 0px 10px 0px;
+}
+.quote .container h3{
+    color: #949494;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0px 0px 20px 0px ;
+}
+
+.boxes .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.boxes .box img{
+    width:400px;
+}
+footer{
+    background: #949494;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .sub-header .container h1{
+        font-size: 3rem;
+    }
+    .sub-header .container p{
+        width: 100%;
+    }
+    .sub-header .container{
+        padding: 150px 20px;
+    }
+    .quote {
+        padding: 20px;
+    }
+    .header .container{
+        padding: 0px 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    .sub-header .container h1{
+        font-size: 2rem;
+    }
+    .boxes .container .box img{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .boxes .container{
+        flex-wrap: wrap;
+    }
+}
+
